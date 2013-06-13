@@ -1,0 +1,56 @@
+@font-face {
+  font-family: 'OpenSans';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Open Sans'), local('OpenSans'), url(../fonts/OpenSans.woff) format('woff');
+}
+
+body{
+    margin: 0px;
+    font-family: 'OpenSans', sans-serif;
+}
+
+#main-div{
+    width: 960px;
+    background-color: #bada55;
+    padding-top: 1px;
+    margin: 0 auto;
+}
+.container:before,
+.container:after {
+    content:"";
+    display:table;
+}
+.container:after {
+    clear:both;
+}
+#main-content{
+    width: 100%;
+}
+#main-content p, #main-content h1, #main-content div{
+    margin-left: 15px;
+    line-height: 20px;
+}
+.row-1{
+    width: 960px;
+}
+
+.mkt-element{
+    width: 300px;
+    margin-left: 10px;
+    margin-right: 10px;
+    background-color: #F7F7F7;
+
+}
+.btn{
+    background-color: #333;
+    color: #FFF;
+}
+.main-btn{
+    float: right;
+    background-color: #333;
+    color: #FFF;
+}
+.left{
+    float: left;
+}

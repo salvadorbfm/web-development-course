@@ -1,0 +1,255 @@
+/*
+    Curso Desarrollo Web - IEEE CS
+    CCS principal
+*/
+
+/*
+    font-face carga una fuente de manera local y asigna un nombre para posterior uso
+*/
+@font-face {
+  font-family: 'OpenSans';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Open Sans'), local('OpenSans'), url(../fonts/OpenSans.woff) format('woff');
+}
+
+/* Selectores de tags html*/
+/* De esta forma afectará a todos los elementos h1 en el documento*/
+h1 {
+    text-align: center;
+}
+body{
+    background-color: #FAFAFA;
+    font-family: 'OpenSans', sans-serif;
+}
+div{
+    text-align: center;
+}
+a{
+    text-decoration: none;
+    color: #800000;
+}
+/* Solo afecta a los elementos con tag p que sean hijo directo de body */
+body > p{
+    text-align: center;
+}
+/* Solo afecta a los elementos con tag h3 que sean hijo directo de body */
+body > h3{
+    text-align: center;
+}
+
+
+/* IDs----------------------------------------------------------------------------------------------------- */
+#main-div{
+    width: 960px;
+    margin: 0 auto;
+    padding: 1px;
+    border: 1px solid #DDD;
+}
+#header{
+    margin: 10px auto;
+    padding: 1px;
+    width: 99%;
+    min-height: 35px;
+    border: 1px solid #DDD;
+}
+#footer{
+    clear: both;
+    margin: 5px auto;
+    padding: 2px;
+    min-height: 25px;
+    font-size: 16px;
+    color: #AAA;
+    border: 1px solid #CCC;
+}
+#side-bar{
+    width: 120px;
+    padding-top:10px;
+    height: 300px;
+    border: 1px solid #CCC;
+}
+#search-bar{
+    width: 150px;
+    padding-top:10px;
+    height: 300px;
+    border: 1px solid #CCC;
+}
+#main-content{
+    margin-top: 0px;
+    margin-left: 128px;
+    padding: 10px 10px 0px 10px;     /* Orden: Top Right Bottom Left */
+    width: 650px;
+    height: 300px;
+    border: 1px solid #CCC;
+}
+/* Fin de IDs------------------------------------------------------------------------------------------------- */
+
+/* Inicio de clases -------------------------------------------------------------------------------------------*/
+.nav-header{
+    float: right;
+    margin-right: 20px;
+    margin: 0px 20px 0px auto;
+    clear: both;                   /* Con esta propiedad el comportamiento float de elemento anterior no le afectárá*/
+}
+    /* Afecta a todos los elementos li hijos dentro de la clase nav-header*/
+.nav-header li{
+    float:left;
+    list-style: none;
+    margin-left: 10px;
+    padding: 1px;
+    border-bottom: 1px solid #CCC;
+}
+    /* Afecta a todos los elementos a hijos dentro de la clase nav-header*/
+.nav-header a{
+    padding-left: 3px;
+    padding-right: 3px;
+    font-size: 24px;
+    line-height: 30px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+.nav-header a:hover{
+    background-color: #333;
+    color: #FFF;
+}
+.note {
+    padding: 10px;
+    color: #333;
+    margin: 10px auto;
+    font-size: 17px;
+    text-align: center;
+    background-color: #F7F7F7;
+    width: 80%;
+    border-radius: 25px;
+}
+.sub-section{
+    width: 100px;
+    height: 50px;
+    margin: 3px auto;
+}
+.gallery-container{
+    width: 80%;
+    min-height: 150px;
+    margin: 0px auto;
+    margin: 1px solid #555;
+    border: 1px solid #CCC;
+    padding: 10px 0px 0px 20px;
+}
+.gallery-item{
+    margin: 3px 0px 0px 3px;
+    width: 60px;
+    height: 60px;
+    padding: 1px;
+    border: 1px solid #CCC;
+}
+.container-1{
+    width: 60%;
+    margin: 10px auto;
+    padding: 10px;
+    border-radius: 20px;
+    border: 1px solid #CCC;
+    text-align: left;
+    background-color: #FFEFD5;
+    font-size: 20px;
+}
+.container-1 ul{
+    margin: 25px auto;
+    width: 80%;
+}
+.div-type-1{
+    margin: 0px;
+    padding: 3px;
+    width: 20%;
+    height: 300px;
+    border: 2px solid #777;
+}
+.div-type-2{
+    margin: 0 auto;
+    padding: 5px;
+    width: 40%;
+    height: 300px;
+    border: 2px solid #777;
+}
+.div-type-3{
+    margin: 10px auto;
+    padding: 5px;
+    width: 99%;
+    height: 100px;
+    border: 0px solid #777;
+}
+/* ---------------------------------------------------------------------------------------------*/
+/* Clases para diferentes fondos*/
+.white-background-1{
+    background-color: #FFFFFF;
+}
+.white-background-2{
+    background-color: rgba(248, 248, 248, 0.97);
+}
+.black-background-1{
+    background-color: #000;
+}
+.black-background-2{
+    background-color: #444;
+}
+.blue-background-1{
+    background-color: #7A9CD8;
+}
+.blue-background-2{
+    background-color: #8ABAE0;
+}
+.red-background-1{
+    background-color: #CA4040;
+}
+.red-background-2{
+    background-color: #FFA28C;
+}
+.green-background-1{
+    background-color: #C6EBBD;
+}
+.green-background-2{
+    background-color: #BBC459;
+}
+.green-background-3{
+    background-color: #6A8830;
+}
+.grey-background-1{
+    background-color: #D8D8D8;
+}
+.grey-background-2{
+    background-color: #F7F7F7;
+}
+.yellow-background-1{
+    background-color: #F9FF91;
+}
+/* ---------------------------------------------------------------------------------------------*/
+
+/* ---------------------------------------------------------------------------------------------*/
+/* Clases para agregar la propiedad float*/
+.left{
+    float: left;
+}
+.right{
+    float: right;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

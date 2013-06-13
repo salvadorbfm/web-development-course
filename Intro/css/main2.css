@@ -1,0 +1,124 @@
+/*
+    font-face carga una fuente de manera local y asigna un nombre para posterior uso
+*/
+@font-face {
+  font-family: 'OpenSans';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Open Sans'), local('OpenSans'), url(../fonts/OpenSans.woff) format('woff');
+}
+
+/* Selectores de tags html*/
+/* De esta forma afectará a todos los elementos h1 en el documento*/
+h1 {
+    text-align: center;
+}
+body{
+    background-color: #FAFAFA;
+    font-family: 'OpenSans', sans-serif;
+}
+div{
+    text-align: center;
+}
+a{
+    text-decoration: none;
+    color: #800000;
+}
+/* Solo afecta a los elementos con tag p que sean hijo directo de body */
+body > p{
+    text-align: center;
+}
+/* Solo afecta a los elementos con tag h3 que sean hijo directo de body */
+body > h3{
+    text-align: center;
+}
+
+
+#main-div{
+    width: 960px;
+    margin: 0 auto;
+    padding: 1px;
+    border: 0px solid #DDD;
+}
+
+#profile-wrapper{
+  padding-top: 0.1px;
+  width: 624px;
+  height: 400px;
+  margin: 0px auto;
+  padding: 20px;
+  border: 1px solid #CCC;
+  box-shadow: 5px 5px 5px #CCC;
+}
+.profile-info{
+  position: relative;
+  padding-top: 0.1px;
+  margin-left: 20px;
+  width: 300px;
+  height: 300px;
+  background-color: #E6FF80;
+  color: #444;
+}
+.profile-info h1{
+  margin: 5px;
+  margin-top: 15px;
+  font-size: 40px;
+  font-weight: bolder;
+  line-height: 38px;
+  text-align: left;
+}
+.profile-info h2{
+  font-size: 22px;
+}
+.profile-info h2, .profile-info p ,.profile-info div{
+  margin-left: 5px;
+  text-align: left;
+  line-height: 20px;
+}
+.skills-section{
+  position: absolute;
+  bottom: 15px;
+}
+.skill{
+  border: 1px solid #CCC;
+  border-radius: 25px;
+  background-color: #F7F7F7;
+  padding: 5px;
+}
+.row-1{
+  position: relative;
+  clear: both;
+  width: 100%;
+  height: 100px;
+}
+.btn {
+  line-height: 20px;
+  position: absolute;
+  bottom: 0px;
+  right: 9px;
+  padding: 5px 15px;
+  background-color: #CFFF10;
+  color: #333;
+  border: 1px solid #CCC;
+  box-shadow: 2px 2px 2px #CCC;
+}
+.bolder{
+  font-weight: bolder;
+}
+.left{
+  float: left;
+}
+.right: {
+  float: right;
+}
+.bio{
+  margin-top: 10px;
+  width: 70%;
+  height: auto;
+  background-color: #F7F7F7;
+  padding: 5px 0px;
+  border: 1px solid #CCC;
+}
+.clear-both{
+  clear: both;
+}
