@@ -1,0 +1,47 @@
+{
+    "users":
+    [
+        {   "perfilImage": "/img/perfil.jpg",
+            "coverImage": "/img/cover.jpg",
+            "name": "Salvador",
+            "lastName": "Elizarraras",
+            "age" : 27,
+            "places": {
+                "0" : "Salamanca",
+                "1" : "Guadalajara"
+            }
+        },
+        {   "perfilImage": "/img/perfil.jpg",
+            "coverImage": "/img/cover.jpg",
+            "name": "Arturo",
+            "lastName": "Elizarraras",
+            "age" : 26,
+            "places": {
+                "0" : "Salamanca",
+                "1" : "Queretaro"
+            }
+        },
+        {   "perfilImage": "/img/perfil.jpg",
+            "coverImage": "/img/cover.jpg",
+            "name": "Omar",
+            "lastName": "Elizarraras",
+            "age" : 24,
+            "places": {
+                "0" : "Salamanca",
+                "1" : "Guanajuato"
+            }
+        },
+        {   "perfilImage": "/img/perfil.jpg",
+            "coverImage": "/img/cover.jpg",
+            "name": "Javier",
+            "lastName": "Elizarraras",
+            "age" : 30,
+            "places": {
+                "0" : "Salamanca"
+            }
+        }
+    ]
+
+}
+
+

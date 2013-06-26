@@ -92,19 +92,50 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
+table{
+    box-shadow: 2px 2px 2px #CCC;
+}
 #main-container{
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+}
+/*
+#main-container{
+    width: 1024px;
     margin: 0px auto;
-    width: 1015px;
+}
+*/
+.fancy-td-1{
+    padding: 5px 10px;
+    letter-spacing: 3px;
+    line-height: 20px;
+    color: #FFF;
+}
+.fancy-th-1{
+    padding: 5px 10px;
+    letter-spacing: -1px;
+    font-size: 20px;
 }
 .red-background{
     background-color: #EE3333 !important;
 }
 .div-type-1{
-    width: 250px;
-    height: 250px;
-    padding: 1px;
+    width: 25%;
+    height: 25%;
+    padding-top: 1px;
     opacity: 1.0;
 }
+.div-type-1 p {
+    margin: 30px auto;
+    width: 70%;
+    color: #DDD;
+    letter-spacing: 2px;
+    font-size: 20px;
+}
+
 .fancy-background-1{
     background-color: #F39C12;
 }
