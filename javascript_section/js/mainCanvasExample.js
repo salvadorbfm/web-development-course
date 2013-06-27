@@ -6,7 +6,11 @@
         var ctx = {};
         var rectangle = {};
         var speed = 5;
-
+        var util = {
+            getRandomInt :  function(min, max) {
+                return Math.floor( Math.random() * (max-min+1) ) + min;
+            }
+        }
         var draw = function(){
             // More info: https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/Canvas_tutorial/Drawing_shapes
             ctx.clearRect(0, 0, canvas.width, canvas.height);
@@ -48,6 +52,13 @@
             }
         };
 
+        var changeBackground = function(){
+            var newIndex = util.getRandomInt(1,10);
+            var fancyBackgroundClass = "fancy-background-"+ newIndex;
+            // Remove all classes
+            $("#my-canvas").removeClass();
+            $("#my-canvas").addClass(fancyBackgroundClass);
+        }
         self.setup = function(){
             canvas = document.getElementById('my-canvas');
             ctx = canvas.getContext('2d');
@@ -58,6 +69,7 @@
             rectangle.width = 50;
             rectangle.height = 80;
             setInterval(draw, 1000/60);
+            setInterval(changeBackground, 5000);
         };
 
 
